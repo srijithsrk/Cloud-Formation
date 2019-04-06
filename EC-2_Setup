@@ -1,0 +1,15 @@
+// sets up an t1.micro ec2 instance running when activated via CloudFormation
+
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Description" : "Srijith's EC2 instance",
+  "Resources" : {
+    "MyEC2Instance" : {
+      "Type" : "AWS::EC2::Instance",
+      "Properties" : {
+        "ImageId" : "ami-0de53d8956e8dcf80",
+        "InstanceType" : "t1.micro"
+      }
+    }
+  }
+}
